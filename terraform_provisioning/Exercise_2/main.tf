@@ -28,25 +28,6 @@ data "archive_file" "zip" {
   output_path = "greet_lambda.zip"  
 }
 
-# data "aws_iam_policy_document" "policy" {
-#   statement {
-#     sid    = ""
-#     effect = "Allow"
-
-#     principals {
-#       identifiers = [ "lambda.amazonaws.com" ]
-#       type        = "Service"
-#     }
-#     actions = ["sts:AssumeRole"]
-#   }
-# }
-
-# resource "aws_iam_role" "iam_role_lambda" {
-#   name               = "iam_role_lambda"
-#   assume_role_policy = data.aws_iam_policy_document.policy.json
-# }
-
-
 resource "aws_cloudwatch_log_group" "function_log_group" {
   name              = "/aws/lambda/${aws_lambda_function.lambda.function_name}"
   retention_in_days = 7

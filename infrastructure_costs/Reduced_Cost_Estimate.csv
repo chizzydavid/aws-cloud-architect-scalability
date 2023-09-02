@@ -1,20 +1,26 @@
-Estimate summary
+﻿Estimate summary
 Upfront cost,Monthly cost,Total 12 months cost,Currency
-0,1208.6299999999999,14503.56,USD
+0,6151.290000000002,73815.48,USD
 ,,* Includes upfront cost
 
 
 Detailed Estimate
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-My Estimate,US East (N. Virginia),EC2 Application Server,Amazon EC2 ,0,181.84,2182.08,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c5.large), Pricing strategy ( 1 Year  None upfront), Enable monitoring (disabled), EBS Storage amount (2 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),EC2 Web Server,Amazon EC2 ,0,207.95999999999998,2495.52,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.large), Pricing strategy (Compute Savings Plans 1 Year  None upfront), Enable monitoring (disabled), EBS Storage amount (2 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),S3 Bucket Estimate,S3 Standard,0,14.2,170.40,USD,,"S3 Standard storage (500 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (300000), GET, SELECT, and all other requests from S3 Standard (3000000), Data returned by S3 Select (0 GB per month), Data scanned by S3 Select (0 GB per month)"
-My Estimate,US East (N. Virginia),S3 Bucket Estimate,Data Transfer,0,5.4,64.80,USD,,"DT Inbound: Internet (20 GB per month), DT Outbound: Internet (60 GB per month)"
-My Estimate,US East (N. Virginia),CloudFront Estimate,Amazon CloudFront,0,5.5,66.00,USD,,"Data transfer out to internet (60 GB per month), Data transfer out to origin (20 GB per month)"
-My Estimate,US East (N. Virginia),,Application Load Balancer,0,28.11,337.32,USD,,Number of Application Load Balancers (1)
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,765.62,9187.44,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (150 GB), Quantity (1), Instance type (db.m1.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (20 GB), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (1.63)"
+Estimate,US East (N. Virginia),EC2 Application Server,Amazon EC2 ,0,973.3679999999999,11680.42,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (t3.2xlarge), Pricing strategy ( 1 Year  None upfront), Enable monitoring (enabled), EBS Storage amount (100 GB), DT Inbound: Not selected (500 GB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (0 TB per month)"
+Estimate,US East (N. Virginia),EC2 Web Server,Amazon EC2 ,0,454.74,5456.88,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c5.large), Pricing strategy ( 1 Year  None upfront), Enable monitoring (enabled), EBS Storage amount (100 GB), DT Inbound: Not selected (100 GB per month), DT Outbound: Internet (500 GB per month), DT Intra-Region: (0 TB per month)"
+Estimate,US East (N. Virginia),RDS Master Instance,Amazon RDS for MySQL,0,2312.38,27748.56,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (1), Instance type (db.m2.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (500 GB), Total Size of Backup Processed for Export (GB) ( per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (1.82)"
+Estimate,US East (N. Virginia),RDS Read Replica,Amazon RDS for MySQL,0,1012.9999999999999,12156.00,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (1), Instance type (db.m1.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (1.82), Additional backup storage (500 GB)"
+Estimate,US East (N. Virginia),Web Application Load Balancer,Application Load Balancer,0,28.11,337.32,USD,,Number of Application Load Balancers (1)
+Estimate,US East (N. Virginia),,Network Load Balancer,0,25.189999999999998,302.28,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (2 GB per hour), Average number of new TCP connections (50 per minute), Average TCP connection duration (5 seconds)"
+Estimate,US East (N. Virginia),S3 Bucket Estimate,S3 Standard,0,471.83,5661.96,USD,,"S3 Standard storage (20 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (90000), GET, SELECT, and all other requests from S3 Standard (800000), Data returned by S3 Select (5 GB per month), Data scanned by S3 Select (10 GB per month)"
+Estimate,US East (N. Virginia),S3 Bucket Estimate,Data Transfer,0,63,756.00,USD,,"DT Inbound: Internet (15 GB per month), DT Outbound: Internet (700 GB per month)"
+Estimate,US East (N. Virginia),CloudFront Estimate,Amazon CloudFront,0,8.55,102.60,USD,,"Data transfer out to internet (100 GB per month), Data transfer out to origin (2 GB per month), Number of requests (HTTPS) (10000 per month)"
+Estimate,US East (N. Virginia),NAT Gateway,Network Address Translation (NAT) Gateway,0,64.35,772.20,USD,,Number of NAT Gateways (1)
+Estimate,US East (N. Virginia),VPC Data Transfer,Data Transfer,0,102.16,1225.92,USD,,"DT Inbound: Internet (700 GB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (500 GB per month), Data transfer cost (102.16)"
+Estimate,US East (N. Virginia),CloudWatch Estimate,Amazon CloudWatch,0,406.853,4882.24,USD,,"GetMetricData: Number of metrics requested (100), Number of Metrics (includes detailed and custom metrics) (100), GetMetricWidgetImage: Number of metrics requested (100), Number of other API requests (5000), Standard Logs: Data Ingested (200 GB), Logs Delivered to CloudWatch Logs: Data Ingested (200 GB), Logs Delivered to S3: Data Ingested (500 GB), Number of Contributor Insights rules for CloudWatch (100)"
+Estimate,US East (N. Virginia),ElasticCache Estimate,Amazon ElastiCache,0,227.76,2733.12,USD,,"Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand), Nodes (2), Instance type (cache.m4.large), Cache Engine (Redis), Utilization (On-Demand only) (100 %Utilized/Month), Cache Node Type (Standard), Pricing strategy (OnDemand)"
 
 
 
-Acknowledgement
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+Notes
+"* Given the reduced budget estimate, I've decided to remove the Cross Region Database Read Replica."
